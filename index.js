@@ -6,6 +6,8 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+
+app.use("/chars", express.static("chars"));
 app.use("/movies", express.static("movies"));
 
 app.get("/", (req, res) => {
