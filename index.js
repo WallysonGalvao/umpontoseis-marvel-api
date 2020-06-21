@@ -3,7 +3,12 @@ const compression = require("compression");
 const cors = require("cors");
 const db = require("./db.json");
 
-require("./imagemin");
+/**
+ * Caso você tenha baixado as imagens do Figma da umpontoseis, descomentar
+ * a linha abaixo para realizar a compressão das imagens.
+ */
+
+// require("./imagemin");
 
 const app = express();
 
@@ -14,9 +19,7 @@ app.use(express.json());
 app.use("/chars", express.static("images/chars"));
 app.use("/movies", express.static("images/movies"));
 
-app.get("/", (req, res) => {
-  return res.json(db);
-});
+app.get("/", (req, res) => res.json(db));
 
 const port = process.env.PORT || 3333;
 app.listen({ port }, () =>

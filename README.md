@@ -32,6 +32,7 @@
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#rocket-executando">Executando</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-executando">Enpoints</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
 <br>
@@ -56,12 +57,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## :notebook: Executando
 
-### Pré-requisitos
-
-É necessário ter os assets baixados. Para baixar acesse o seguinte endereço: ==> [Assets](https://medium.com/r/?url=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1crdjIJM-0HBgUvU8MeSy0bgdAmfFODaI) <==
-
-<p>Feito isso, copie as pastas movies e chars para dentro do projeto umpontoseis-marvel-api.</p>
-
 ```bash
 # Clone este repositório
 $ git clone https://github.com/WallysonGalvao/umpontoseis-marvel-api.git
@@ -76,12 +71,9 @@ $ yarn install
 $ yarn start
 
 # Acessar http://localhost:3333
-
-# As imagens estarão disponíveis quando aparecer a mensagem
-# All images are compressed on "images/" directory
 ```
 
-## :notebook: Endpoints
+## :orange_book: Endpoints
 
 - **`/`**: Lista todos os heróis, vilões, anti-vilões e humanos.
 
